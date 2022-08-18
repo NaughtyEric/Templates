@@ -20,7 +20,7 @@ int read(_Tp &_x) {
 }
 
 template<typename _Tp, typename ...tp>
-int read(_Tp _x, tp ...pkg) {
+int read(_Tp &_x, tp &...pkg) {
     if(!read(_x)) return 0;
     return read(pkg...)+1;
 }
