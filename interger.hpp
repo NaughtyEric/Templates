@@ -5,7 +5,7 @@
 #include <iomanip>
 #include <iostream>
 
-class IntergerExceptions {
+class IntergerExceptions : public std::exception{
     int ErrorLine;
     std::string ErrorReason;
 public:
